@@ -29,7 +29,7 @@ class BetRequest(BaseModel):
 
 app = FastAPI(title='Pitch-by-Pitch MLB Betting')
 
-# Configure CORS
+# Configure CORS for requests from frontend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"], # Next.js dev server
